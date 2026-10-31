@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="RasaQuest privacy information and data subject rights.">
+  <meta name="theme-color" content="#174c3c">
+  <title>RasaQuest | Privacy &amp; Data Protection</title>
+  <style>
+    :root{color-scheme:light;--green:#174c3c;--green-dark:#10372c;--cream:#f7f5ed;--ink:#202923;--muted:#647169;--white:#fff;--line:#e3e8e2; --orange:rgb(255, 149, 0);}
+    *{box-sizing:border-box}
+    body{margin:0;min-height:100vh;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--cream);display:flex;flex-direction:column}
+    header{background:var(--orange);color:var(--white);padding:22px 24px}
+    .header-inner,main,footer{width:min(960px,calc(100% - 40px));margin:0 auto}
+    .brand{font-size:1.2rem;font-weight:800;letter-spacing:.04em}
+    main{flex:1;display:grid;align-content:center;padding:64px 0}
+    .intro{text-align:center;margin-bottom:30px}
+    .eyebrow{color:var(--green);text-transform:uppercase;letter-spacing:.14em;font-size:.75rem;font-weight:800}
+    h1{margin:12px 0;font-size:clamp(2rem,5vw,3.25rem);line-height:1.1;color:var(--green-dark)}
+    .intro p{max-width:700px;margin:0 auto;color:var(--muted);line-height:1.7}
+    .about{max-width:760px;margin:0 auto 34px;padding:24px 28px;background:#eaf2ed;border:1px solid #d8e7dc;border-radius:18px;text-align:center}
+    .about h2,.privacy-intro h2{margin:0 0 10px;color:var(--green-dark);font-size:1.35rem}
+    .about p,.privacy-intro p{margin:0;color:var(--muted);line-height:1.7}
+    .privacy-intro{text-align:center;margin:0 0 22px}
+    .cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+    .card{display:flex;flex-direction:column;min-height:230px;padding:28px;background:var(--white);border:1px solid var(--line);border-radius:18px;text-decoration:none;color:inherit;box-shadow:0 8px 24px rgba(23,76,60,.06);transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
+    .card:hover,.card:focus-visible{transform:translateY(-3px);border-color:#9ab9a8;box-shadow:0 14px 30px rgba(23,76,60,.11);outline:none}
+    .icon{display:grid;place-items:center;width:46px;height:46px;border-radius:13px;background:#eaf2ed;color:var(--green);font-size:1.35rem;margin-bottom:20px}
+    h2{margin:0 0 10px;color:var(--green-dark);font-size:1.25rem}
+    .card p{margin:0;color:var(--muted);line-height:1.6}
+    .link-label{margin-top:auto;padding-top:22px;color:var(--green);font-weight:750}
+    footer{padding:22px 0 28px;border-top:1px solid var(--line);text-align:center;color:var(--muted);font-size:.88rem}
+    @media(max-width:640px){.cards{grid-template-columns:1fr}main{padding:46px 0}.card{min-height:200px}}
+  </style>
+</head>
+<body>
+  <header><div class="header-inner"><div class="brand">RasaQuest</div></div></header>
+  <main>
+    <section class="intro" aria-labelledby="page-title">
+      <div class="eyebrow">Welcome to RasaQuest</div>
+      <h1 id="page-title">A delicious adventure awaits.</h1>
+      <p>
+        Explore a food-themed puzzle adventure inspired by Malaysian cuisine.
+        Discover hidden ingredients, solve challenging puzzles, avoid traps,
+        and unlock iconic local dishes as you progress through your journey.
+      </p>
+    </section>
+
+    <section class="about" aria-labelledby="about-title">
+      <h2 id="about-title">Explore, collect, and unlock</h2>
+      <p>
+        Search through different puzzle areas to uncover ingredients and build
+        your collection. Use your discoveries to unlock dishes such as Nasi
+        Lemak, Roti Canai, Satay, and Rendang. Follow the adventure in Story
+        Mode, or test your skills in Endless Mode with randomized boards and
+        an ever-higher score to chase.
+      </p>
+    </section>
+
+    <section class="privacy-intro" aria-labelledby="privacy-title">
+      <div class="eyebrow">Privacy &amp; Data Protection</div>
+      <h2 id="privacy-title">Your privacy matters.</h2>
+      <p>
+        Find out how RasaQuest handles information and learn how to exercise
+        your data protection rights.
+      </p>
+    </section>
+
+    <nav class="cards" aria-label="Privacy information">
+      <a class="card" href="PrivacyPolicy.html">
+        <span class="icon" aria-hidden="true">🔒</span>
+        <h2>Privacy Policy</h2>
+        <p>Read about the information that may be processed when you play RasaQuest, how it is used, and how it is protected.</p>
+        <span class="link-label">Read Privacy Policy &rarr;</span>
+      </a>
+      <a class="card" href="DataSubjectRight.html">
+        <span class="icon" aria-hidden="true">🛡️</span>
+        <h2>Data Subject Rights</h2>
+        <p>Learn how to request access, correction, or deletion of personal information, and how to contact us with a privacy request.</p>
+        <span class="link-label">View Your Rights &rarr;</span>
+      </a>
+    </nav>
+  </main>
+  <footer>&copy; <span id="year">2026</span> RasaQuest. All rights reserved.</footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
